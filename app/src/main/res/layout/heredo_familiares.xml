@@ -324,7 +324,7 @@
             android:layout_above="@+id/etNef"
             android:layout_alignRight="@+id/rgCar"
             android:layout_alignEnd="@+id/rgCar"
-            android:id="@+id/egEnfen"
+            android:id="@+id/rgEnfen"
             android:layout_below="@+id/textView21">
 
             <RadioButton
@@ -348,9 +348,9 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/etEnfen"
-            android:layout_below="@+id/egEnfen"
-            android:layout_alignLeft="@+id/egEnfen"
-            android:layout_alignStart="@+id/egEnfen"
+            android:layout_below="@+id/rgEnfen"
+            android:layout_alignLeft="@+id/rgEnfen"
+            android:layout_alignStart="@+id/rgEnfen"
             android:layout_alignRight="@+id/rgDia"
             android:layout_alignEnd="@+id/rgDia"
             android:hint="Descripción" />
@@ -358,7 +358,7 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignTop="@+id/egEnfen"
+            android:layout_alignTop="@+id/rgEnfen"
             android:layout_alignLeft="@+id/textView22"
             android:layout_alignStart="@+id/textView22"
             android:layout_above="@+id/etEnfen"

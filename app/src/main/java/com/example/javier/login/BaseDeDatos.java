@@ -16,28 +16,29 @@ public class BaseDeDatos extends SQLiteOpenHelper {
                 "[Domicilio_Responsable] TEXT  NULL, [Telefono_Responsable] NUMERIC  NULL, [Religion] TEXT  NULL, [Fecha_Ingreso] DATE  NULL, " +
                 "[Fecha_Elaboracion] DATE  NULL, [Piso_o_Sala] TEXT  NULL, [Cama] TEXT  NULL )";
 
-    String gineco = "CREATE TABLE CREATE TABLE [Gineco_Obstetricos] (\n" +
-            "[Menarca] BOOLEAN  NULL,\n" +
-            "[Desarrollo_Sexual] TEXT  NULL,\n" +
-            "[Ritmo_Menstrual] TEXT  NULL,\n" +
-            "[Cantidad] INTEGER  NULL,\n" +
-            "[Duracion] TEXT  NULL,\n" +
-            "[Fecha_Ultima_Menstruacion] DATE  NULL,\n" +
-            "[Fecha_Probable_Parto] DATE  NULL,\n" +
-            "[Fecha_Ultima_Parto] DATE  NULL,\n" +
-            "[Fecha_Primera_Relacion] DATE  NULL,\n" +
-            "[Fecha_Matrimonio] DATE  NULL,\n" +
-            "[Fecha_Menopausia] DATE  NULL,\n" +
-            "[Fecha_Climaterio] DATE  NULL,\n" +
-            "[Vida_Sexual] TEXT  NULL,\n" +
-            "[Numero_Gestas] NUMERIC  NULL,\n" +
-            "[Partos] BOOLEAN  NULL,\n" +
-            "[Abortos] BOOLEAN  NULL,\n" +
-            "[Cesareas] BOOLEAN  NULL,\n" +
-            "[Metodo_Anticonceptivo] TEXT  NULL,\n" +
-            "[Fecha_Ultimo_Papanicolau] DATE  NULL,\n" +
-            "[Id_Gineco] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT\n" +
-            ")";
+    String gineco = "CREATETABLE[Gineco_Obstetricos](\n" +
+                "[Menarca] BOOLEAN  NULL,\n"+
+                "[Desarrollo_Sexual] TEXT  NULL,\n"+
+                "[Ritmo_Menstrual] TEXT  NULL,\n"+
+                "[Cantidad] INTEGER  NULL,\n"+
+                "[Duracion] TEXT  NULL,\n"+
+                "[Fecha_Ultima_Menstruacion] DATE  NULL,\n"+
+                "[Fecha_Probable_Parto] DATE  NULL,\n"+
+                "[Fecha_Ultima_Parto] DATE  NULL,\n"+
+                "[Fecha_Primera_Relacion] DATE  NULL,\n"+
+                "[Fecha_Matrimonio] DATE  NULL,\n"+
+                "[Fecha_Menopausia] DATE  NULL,\n"+
+                "[Fecha_Climaterio] DATE  NULL,\n"+
+                "[Vida_Sexual] TEXT  NULL,\n"+
+                "[Numero_Gestas] NUMERIC  NULL,\n"+
+                "[Partos] BOOLEAN  NULL,\n"+
+                "[Abortos] BOOLEAN  NULL,\n"+
+                "[Cesareas] BOOLEAN  NULL,\n"+
+                "[Metodo_Anticonceptivo] TEXT  NULL,\n"+
+                "[Fecha_Ultimo_Papanicolau] DATE  NULL,\n"+
+                "[Id_Gineco] INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,\n"+
+                "[DesMenarca] TEXT  NULL\n"+
+                ")";
 
     String Heredo = "CREATE TABLE [Heredo_Familiares] (\n" +
             "[Tuberculosis] BOOLEAN  NULL,\n" +

@@ -23,7 +23,7 @@
         </activity>
         <activity
             android:name=".Heredo_Familiares"
-            android:label="Heredo Familiares" >
+            android:label="Login" >
         </activity>
         <activity
             android:name=".Personales_Patologicos"

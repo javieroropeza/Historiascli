@@ -85,7 +85,7 @@
             android:layout_above="@+id/etDes"
             android:layout_alignRight="@+id/textView53"
             android:layout_alignEnd="@+id/textView53"
-            android:id="@+id/radioGroup">
+            android:id="@+id/rgMen">
 
             <RadioButton
                 android:layout_width="wrap_content"

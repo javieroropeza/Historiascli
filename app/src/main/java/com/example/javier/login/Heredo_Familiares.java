@@ -21,9 +21,6 @@ public class Heredo_Familiares extends Activity {
         }
     };
 
-    private RadioButton r1,r2;
-  
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,37 +29,222 @@ public class Heredo_Familiares extends Activity {
         Button hf2 = (Button) findViewById(R.id.bntpag2hefa);
         hf2.setOnClickListener(heredofamiliares2);
 
-        r1=(RadioButton)findViewById(R.id.rbsitub);
-        r2=(RadioButton)findViewById(R.id.rbnotub);
-
-
-           /*     r1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        RadioGroup tub = (RadioGroup) findViewById(R.id.rgTub);
+        tub.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
+
                 // find which radio button is selected
 
                 if (checkedId == R.id.rbsitub) {
-                    r2.setChecked(false);
-               }
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnotub) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
             }
         });
-*/
 
-       /* findViewById(R.id.rbsiTuber).setOnClickListener(new View.OnClickListener() {
-
+        RadioGroup dia = (RadioGroup) findViewById(R.id.rgDia);
+        dia.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
-                findViewById(R.id.rbnotuber);
+
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsidia) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnodia) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
             }
         });
 
-        if (r1.isChecked()==true) {
+        RadioGroup hip = (RadioGroup) findViewById(R.id.rgHip);
+        hip.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
 
-            r2.setSelected(false);
-        } else if (r2.isChecked()==true) {
-            r1.setSelected(false);
-        }*/
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsihip) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnohip) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
+            }
+        });
+
+        RadioGroup neo = (RadioGroup) findViewById(R.id.rgNeo);
+        neo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsineo) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnoneo) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
+            }
+        });
+
+
+        RadioGroup car = (RadioGroup) findViewById(R.id.rgCar);
+        car.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsicar) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnocar) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
+            }
+        });
+
+        RadioGroup hep = (RadioGroup) findViewById(R.id.rgHep);
+        hep.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsihep) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnohep) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
+            }
+        });
+
+        RadioGroup nef = (RadioGroup) findViewById(R.id.rgNef);
+        nef.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsinef) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnonef) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
+            }
+        });
+
+        RadioGroup enfen = (RadioGroup) findViewById(R.id.rgEnfen);
+        enfen.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsienfen) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnoenfen) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
+            }
+        });
+
+        RadioGroup enfme = (RadioGroup) findViewById(R.id.rgEnfme);
+        enfme.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                // find which radio button is selected
+
+                if (checkedId == R.id.rbsienfme) {
+
+                   /* Toast.makeText(getApplicationContext(), "Masculino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                } else if (checkedId == R.id.rbnoenfme) {
+
+                    /*Toast.makeText(getApplicationContext(), "Femenino",
+
+                            Toast.LENGTH_SHORT).show();*/
+
+                }
+            }
+        });
 
     }
 

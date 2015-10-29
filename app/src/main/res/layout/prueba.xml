@@ -1,380 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
         android:layout_gravity="center_horizontal">
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:hint="Descripción"
-            android:layout_below="@+id/radioButton9"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText2"
-            android:layout_below="@+id/radioButton4"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:hint="Descripción" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText3"
-            android:layout_below="@+id/radioButton6"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:hint="Descripción" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText4"
-            android:hint="Descripción"
-            android:layout_above="@+id/textView31"
-            android:layout_centerHorizontal="true" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText5"
-            android:hint="Descripción"
-            android:layout_below="@+id/radioButton9"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText6"
-            android:layout_above="@+id/textView32"
-            android:layout_centerHorizontal="true"
-            android:hint="Descripción" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText7"
-            android:hint="Descripción"
-            android:layout_below="@+id/radioButton12"
-            android:layout_alignRight="@+id/radioButton14"
-            android:layout_alignEnd="@+id/radioButton14" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText8"
-            android:layout_below="@+id/radioButton16"
-            android:hint="Descripción"
-            android:layout_alignLeft="@+id/radioButton15"
-            android:layout_alignStart="@+id/radioButton15" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText9"
-            android:layout_alignBottom="@+id/editText8"
-            android:layout_centerHorizontal="true"
-            android:hint="Descripción" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton"
-            android:checked="false"
-            android:layout_above="@+id/editText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton2"
-            android:checked="false"
-            android:layout_alignTop="@+id/radioButton"
-            android:layout_alignRight="@+id/editText"
-            android:layout_alignEnd="@+id/editText" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton3"
-            android:checked="false"
-            android:layout_below="@+id/textView31"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton4"
-            android:checked="false"
-            android:layout_alignTop="@+id/radioButton3"
-            android:layout_alignRight="@+id/textView31"
-            android:layout_alignEnd="@+id/textView31" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton5"
-            android:layout_below="@+id/textView32"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton6"
-            android:checked="false"
-            android:layout_below="@+id/textView32"
-            android:layout_alignRight="@+id/textView32"
-            android:layout_alignEnd="@+id/textView32" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton7"
-            android:checked="false"
-            android:layout_below="@+id/textView30"
-            android:layout_alignLeft="@+id/editText4"
-            android:layout_alignStart="@+id/editText4" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton8"
-            android:checked="false"
-            android:layout_alignTop="@+id/radioButton7"
-            android:layout_alignRight="@+id/editText4"
-            android:layout_alignEnd="@+id/editText4" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton9"
-            android:checked="false"
-            android:layout_below="@+id/textView30"
-            android:layout_alignLeft="@+id/editText5"
-            android:layout_alignStart="@+id/editText5" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton10"
-            android:checked="false"
-            android:layout_below="@+id/textView30"
-            android:layout_toRightOf="@+id/radioButton9"
-            android:layout_toEndOf="@+id/radioButton9" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton11"
-            android:checked="false"
-            android:layout_below="@+id/textView33"
-            android:layout_alignLeft="@+id/editText6"
-            android:layout_alignStart="@+id/editText6" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton12"
-            android:checked="false"
-            android:layout_above="@+id/editText6"
-            android:layout_toLeftOf="@+id/textView30"
-            android:layout_toStartOf="@+id/textView30" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton13"
-            android:checked="false"
-            android:layout_above="@+id/editText7"
-            android:layout_alignLeft="@+id/editText7"
-            android:layout_alignStart="@+id/editText7" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton14"
-            android:checked="false"
-            android:layout_alignTop="@+id/radioButton13"
-            android:layout_alignLeft="@+id/radioButton10"
-            android:layout_alignStart="@+id/radioButton10" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton15"
-            android:checked="false"
-            android:layout_below="@+id/textView52"
-            android:layout_alignLeft="@+id/editText7"
-            android:layout_alignStart="@+id/editText7" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton16"
-            android:checked="false"
-            android:layout_alignTop="@+id/radioButton15"
-            android:layout_alignRight="@+id/editText7"
-            android:layout_alignEnd="@+id/editText7" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sí"
-            android:id="@+id/radioButton17"
-            android:checked="false"
-            android:layout_above="@+id/editText3"
-            android:layout_alignLeft="@+id/editText6"
-            android:layout_alignStart="@+id/editText6" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/radioButton18"
-            android:checked="false"
-            android:layout_below="@+id/textView52"
-            android:layout_alignRight="@+id/textView52"
-            android:layout_alignEnd="@+id/textView52" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Paludismo"
-            android:id="@+id/textView28"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Parasitosis "
-            android:id="@+id/textView29"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Padecimientos Articulares"
-            android:id="@+id/textView30"
-            android:layout_gravity="right"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/editText4"
-            android:layout_toEndOf="@+id/editText4"
-            android:layout_marginLeft="27dp"
-            android:layout_marginStart="27dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Intervenciones Quirúrgicas"
-            android:id="@+id/textView31"
-            android:layout_below="@+id/editText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="41dp"
-            android:layout_alignRight="@+id/editText"
-            android:layout_alignEnd="@+id/editText" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Intolerancia a medicamentos"
-            android:id="@+id/textView32"
-            android:layout_below="@+id/editText2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="41dp"
-            android:layout_alignRight="@+id/editText2"
-            android:layout_alignEnd="@+id/editText2" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Fracturas y/o Esguinces"
-            android:id="@+id/textView33"
-            android:layout_toLeftOf="@+id/textView30"
-            android:layout_alignTop="@+id/textView31"
-            android:layout_alignLeft="@+id/radioButton11"
-            android:layout_alignStart="@+id/radioButton11" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Perdida del conocimientoc"
-            android:id="@+id/textView34"
-            android:layout_alignBottom="@+id/textView33"
-            android:layout_alignLeft="@+id/textView30"
-            android:layout_alignStart="@+id/textView30" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Alergias"
-            android:id="@+id/textView51"
-            android:layout_alignTop="@+id/textView52"
-            android:layout_alignLeft="@+id/textView34"
-            android:layout_alignStart="@+id/textView34" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Desarrollo somático"
-            android:id="@+id/textView52"
-            android:layout_above="@+id/radioButton17"
-            android:layout_alignTop="@+id/textView32"
-            android:layout_alignRight="@+id/editText6"
-            android:layout_alignEnd="@+id/editText6"
-            android:layout_alignLeft="@+id/textView29"
-            android:layout_alignStart="@+id/textView29" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Guardar"
             android:id="@+id/button"
+            android:layout_alignBottom="@+id/editText14"
+            android:layout_alignRight="@+id/editText5"
+            android:layout_alignEnd="@+id/editText5" />
+
+        <EditText
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:hint="Nombre"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="Apellido Paterno"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="49dp"
+            android:layout_marginEnd="49dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="Apellido Materno"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/editText2"
+            android:layout_toLeftOf="@+id/editText2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:hint="Lugar de Origen"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="67dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:hint="Lugar de Residencia"
+            android:layout_alignTop="@+id/editText4"
+            android:layout_toRightOf="@+id/editText3"
+            android:layout_toEndOf="@+id/editText3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:hint="Domicilio"
+            android:layout_below="@+id/editText4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText7"
+            android:hint="Teléfono"
+            android:layout_below="@+id/editText5"
+            android:layout_alignRight="@+id/spinner"
+            android:layout_alignEnd="@+id/spinner" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText8"
+            android:hint="Nombre Completo"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText9"
+            android:hint="Domicílio"
+            android:layout_alignBottom="@+id/editText8"
+            android:layout_alignLeft="@+id/editText7"
+            android:layout_alignStart="@+id/editText7"
+            android:layout_alignRight="@+id/editText7"
+            android:layout_alignEnd="@+id/editText7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText10"
+            android:hint="Teléfono"
+            android:layout_below="@+id/editText8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/editText6"
+            android:layout_alignEnd="@+id/editText6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText11"
+            android:hint="Religion"
             android:layout_below="@+id/editText9"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="31dp" />
+            android:layout_alignRight="@+id/editText9"
+            android:layout_alignEnd="@+id/editText9"
+            android:layout_alignLeft="@+id/editText9"
+            android:layout_alignStart="@+id/editText9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editText12"
+            android:hint="Fecha de Ingreso"
+            android:layout_below="@+id/editText10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/editText8"
+            android:layout_alignEnd="@+id/editText8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editText13"
+            android:hint="Fecha de Elaboracion"
+            android:layout_below="@+id/editText11"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText14"
+            android:layout_below="@+id/textView14"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_toLeftOf="@+id/spinner"
+            android:layout_toStartOf="@+id/spinner" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView7"
+            android:layout_above="@+id/editText5"
+            android:layout_alignRight="@+id/editText4"
+            android:layout_alignEnd="@+id/editText4"
+            android:id="@+id/radioGroup2" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:id="@+id/radioButton"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"
+                android:id="@+id/radioButton2"
+                android:checked="false" />
+        </RadioGroup>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_alignRight="@+id/editText5"
+            android:layout_alignEnd="@+id/editText5" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/editText12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/editText4"
+            android:layout_alignEnd="@+id/editText4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sexo"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView8"
+            android:text="Estado Civil"
+            android:layout_above="@+id/editText4"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Persona Responsable"
+            android:id="@+id/textView13"
+            android:layout_below="@+id/editText7"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cama"
+            android:id="@+id/textView14"
+            android:layout_alignTop="@+id/spinner2"
+            android:layout_toRightOf="@+id/editText12"
+            android:layout_toEndOf="@+id/editText12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText15"
+            android:layout_below="@+id/editText2"
+            android:layout_alignRight="@+id/spinner"
+            android:layout_alignEnd="@+id/spinner"
+            android:layout_toRightOf="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14"
+            android:hint="Nacionalidad" />
     </RelativeLayout>
 </LinearLayout>

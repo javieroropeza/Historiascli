@@ -252,20 +252,20 @@
             android:layout_alignRight="@+id/textView69"
             android:layout_alignEnd="@+id/textView69"
             android:layout_above="@+id/etTu"
-            android:id="@+id/rgTub">
+            android:id="@+id/rgTube">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sí"
-                android:id="@+id/rbsitu"
+                android:id="@+id/rbsitube"
                 android:checked="false" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"
-                android:id="@+id/rbnotu"
+                android:id="@+id/rbnotube"
                 android:checked="false" />
         </RadioGroup>
 

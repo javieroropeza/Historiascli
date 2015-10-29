@@ -4,7 +4,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:id="@+id/fic">
 
         <EditText
             android:layout_width="134dp"
@@ -22,185 +23,46 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/etapater"
+            android:id="@+id/etappat"
             android:hint="Apellido Paterno"
             android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/textView8"
-            android:layout_alignStart="@+id/textView8" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="49dp"
+            android:layout_marginEnd="49dp" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/etamater"
+            android:id="@+id/etapmat"
             android:hint="Apellido Materno"
             android:layout_below="@+id/etnom"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/etnpres"
-            android:layout_alignEnd="@+id/etnpres" />
+            android:layout_toStartOf="@+id/etappat"
+            android:layout_toLeftOf="@+id/etappat" />
 
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etnacion"
-            android:hint="Nacionalidad"
-            android:layout_alignBottom="@+id/etamater"
-            android:layout_alignLeft="@+id/etapater"
-            android:layout_alignStart="@+id/etapater"
-            android:layout_alignRight="@+id/etapater"
-            android:layout_alignEnd="@+id/etapater" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etlres"
-            android:hint="Lugar de Residencia"
-            android:layout_below="@+id/rbfem"
-            android:layout_alignRight="@+id/sestcivil"
-            android:layout_alignEnd="@+id/sestcivil" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etlorigen"
-            android:hint="Lugar de Origen"
-            android:layout_alignBottom="@+id/etlres"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sexo"
+            android:id="@+id/textView28"
+            android:layout_below="@+id/etapmat"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etdom"
-            android:hint="Domicilio"
-            android:layout_below="@+id/etlorigen"
-            android:layout_alignRight="@+id/rbfem"
-            android:layout_alignEnd="@+id/rbfem" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:ems="10"
-            android:id="@+id/ettel"
-            android:hint="Teléfono"
-            android:layout_below="@+id/etlres"
-            android:layout_alignLeft="@+id/etlres"
-            android:layout_alignStart="@+id/etlres"
-            android:layout_alignRight="@+id/etlres"
-            android:layout_alignEnd="@+id/etlres" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etnpres"
-            android:hint="Nombre Completo"
-            android:layout_below="@+id/textView13"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:ems="10"
-            android:id="@+id/etdompres"
-            android:hint="Domicílio"
-            android:layout_alignBottom="@+id/etnpres"
-            android:layout_alignLeft="@+id/ettel"
-            android:layout_alignStart="@+id/ettel"
-            android:layout_alignRight="@+id/ettel"
-            android:layout_alignEnd="@+id/ettel" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:ems="10"
-            android:id="@+id/ettelpres"
-            android:hint="Teléfono"
-            android:layout_below="@+id/etnpres"
-            android:layout_toLeftOf="@+id/textView8"
-            android:layout_toStartOf="@+id/textView8" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/etfingreso"
-            android:hint="Fecha de Ingreso"
-            android:layout_below="@+id/ettelpres"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/etnpres"
-            android:layout_alignEnd="@+id/etnpres" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/etfela"
-            android:hint="Fecha de Elaboracion"
-            android:layout_below="@+id/ettelpres"
-            android:layout_alignRight="@+id/etdompres"
-            android:layout_alignEnd="@+id/etdompres"
-            android:layout_toRightOf="@+id/etfingreso"
-            android:layout_toEndOf="@+id/etfingreso" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etrel"
-            android:layout_alignBottom="@+id/ettelpres"
-            android:layout_alignLeft="@+id/etdompres"
-            android:layout_alignStart="@+id/etdompres"
-            android:layout_alignRight="@+id/etdompres"
-            android:layout_alignEnd="@+id/etdompres"
-            android:hint="Religion" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etpisoosala"
-            android:layout_weight="1"
-            android:layout_alignTop="@+id/spisoosala"
-            android:layout_toRightOf="@+id/spisoosala"
-            android:layout_toLeftOf="@+id/textView8"
-            android:layout_toStartOf="@+id/textView8" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etcama"
-            android:layout_alignTop="@+id/textView14"
-            android:layout_toRightOf="@+id/textView14"
-            android:layout_toLeftOf="@+id/btnguardar"
-            android:layout_toStartOf="@+id/btnguardar" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Femenino"
-            android:id="@+id/rbfem"
-            android:checked="false"
-            android:layout_below="@+id/textView7"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="36dp" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Masculino"
-            android:id="@+id/rbmas"
-            android:checked="true"
-            android:layout_below="@+id/textView7"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView29"
+            android:text="Estado Civil"
+            android:layout_alignTop="@+id/textView28"
+            android:layout_alignRight="@+id/etappat"
+            android:layout_alignEnd="@+id/etappat" />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -208,71 +70,208 @@
             android:id="@+id/sestcivil"
             android:spinnerMode="dropdown"
             android:textAlignment="textStart"
-            android:layout_below="@+id/textView8"
-            android:layout_alignLeft="@+id/textView8"
-            android:layout_alignStart="@+id/textView8"
-            android:layout_alignRight="@+id/etnacion"
-            android:layout_alignEnd="@+id/etnacion" />
+            android:layout_below="@+id/textView29"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29" />
 
-        <Spinner
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/spisoosala"
-            android:layout_below="@+id/etfingreso"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etnac"
+            android:layout_below="@+id/etappat"
+            android:layout_alignRight="@+id/sestcivil"
+            android:layout_alignEnd="@+id/sestcivil"
+            android:hint="Nacionalidad"
+            android:layout_toEndOf="@+id/etapmat"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etluori"
+            android:layout_below="@+id/sestcivil"
+            android:layout_alignRight="@+id/etnom"
+            android:layout_alignEnd="@+id/etnom"
+            android:hint="Lugar de origen" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etlures"
+            android:layout_alignBottom="@+id/etluori"
+            android:layout_alignLeft="@+id/sestcivil"
+            android:layout_alignStart="@+id/sestcivil"
+            android:hint="Lugar de residencia" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView28"
+            android:layout_alignRight="@+id/etluori"
+            android:layout_alignEnd="@+id/etluori"
+            android:layout_alignBottom="@+id/sestcivil"
+            android:id="@+id/rgsex">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:id="@+id/rbmas"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"
+                android:id="@+id/rbfem"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etdom"
+            android:layout_below="@+id/etluori"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/etfela"
-            android:spinnerMode="dropdown"
-            android:layout_alignRight="@+id/rbmas"
-            android:layout_alignEnd="@+id/rbmas" />
+            android:hint="Domicilio"
+            android:layout_alignRight="@+id/etluori"
+            android:layout_alignEnd="@+id/etluori" />
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Sexo"
-            android:id="@+id/textView7"
-            android:layout_below="@+id/etamater"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView8"
-            android:text="Estado Civil"
-            android:layout_alignTop="@+id/textView7"
-            android:layout_toRightOf="@+id/etamater"
-            android:layout_toEndOf="@+id/etamater"
-            android:layout_marginLeft="33dp"
-            android:layout_marginStart="33dp" />
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/ettel"
+            android:layout_below="@+id/etlures"
+            android:layout_alignLeft="@+id/etlures"
+            android:layout_alignStart="@+id/etlures"
+            android:hint="Teléfono" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Persona Responsable"
-            android:id="@+id/textView13"
+            android:id="@+id/textView30"
             android:layout_below="@+id/etdom"
             android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etnomperres"
+            android:layout_below="@+id/textView30"
+            android:hint="Nombre Completo"
+            android:layout_alignRight="@+id/etapmat"
+            android:layout_alignEnd="@+id/etapmat" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etdomperres"
+            android:layout_below="@+id/textView30"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/ettel"
+            android:layout_alignStart="@+id/ettel"
+            android:hint="Domicilio" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/ettelperres"
+            android:layout_below="@+id/etnomperres"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etnomperres"
+            android:layout_alignEnd="@+id/etnomperres"
+            android:hint="Teléfono" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etrel"
+            android:layout_below="@+id/etdomperres"
+            android:layout_alignLeft="@+id/etdomperres"
+            android:layout_alignStart="@+id/etdomperres"
+            android:hint="Religión" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etfeini"
+            android:layout_below="@+id/ettelperres"
+            android:layout_alignRight="@+id/etdom"
+            android:layout_alignEnd="@+id/etdom"
+            android:hint="Fecha de ingreso" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etfeela"
+            android:layout_alignBottom="@+id/etfeini"
+            android:layout_alignLeft="@+id/etrel"
+            android:layout_alignStart="@+id/etrel"
+            android:hint="Fecha de elaboración" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spisoosala"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/etfeini"
+            android:layout_alignRight="@+id/etfeini"
+            android:layout_alignEnd="@+id/etfeini" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cama"
-            android:id="@+id/textView14"
-            android:layout_alignTop="@+id/etpisoosala"
-            android:layout_toRightOf="@+id/etfingreso"
-            android:layout_toEndOf="@+id/etfingreso" />
+            android:id="@+id/textView31"
+            android:layout_below="@+id/etfeela"
+            android:layout_toRightOf="@+id/ettelperres"
+            android:layout_toEndOf="@+id/ettelperres" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText16"
+            android:layout_alignBottom="@+id/spisoosala"
+            android:layout_alignLeft="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            android:layout_alignRight="@+id/textView31"
+            android:layout_alignEnd="@+id/textView31" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Guardar"
-            android:id="@+id/btnguardar"
-            android:layout_alignBottom="@+id/spisoosala"
-            android:layout_alignRight="@+id/etfela"
-            android:layout_alignEnd="@+id/etfela" />
+            android:id="@+id/btngufi"
+            android:layout_below="@+id/textView31"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </LinearLayout>

@@ -131,7 +131,8 @@
             android:layout_below="@+id/textView68"
             android:layout_alignLeft="@+id/textView68"
             android:layout_alignStart="@+id/textView68"
-            android:layout_above="@+id/etAbo">
+            android:layout_above="@+id/etAbo"
+            android:id="@+id/rgAbo">
 
             <RadioButton
                 android:layout_width="wrap_content"
