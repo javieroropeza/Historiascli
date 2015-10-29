@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/per">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Tabaquismo "
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alcoholismo"
+            android:id="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/etAlc"
+            android:layout_alignEnd="@+id/etAlc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Toxicomanías"
+            android:id="@+id/textView11"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etTab"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="66dp"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etAlc"
+            android:layout_alignBottom="@+id/etTab"
+            android:hint="Descripción"
+            android:layout_alignLeft="@+id/etTu"
+            android:layout_alignStart="@+id/etTu"
+            android:layout_alignRight="@+id/etTu"
+            android:layout_alignEnd="@+id/etTu" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etTox"
+            android:layout_alignBottom="@+id/etAlc"
+            android:hint="Descripción"
+            android:layout_alignLeft="@+id/rgTox"
+            android:layout_alignStart="@+id/rgTox" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etAlc"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6"
+            android:id="@+id/rgTab">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsitab"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnotab"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView9"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_alignRight="@+id/textView9"
+            android:layout_alignEnd="@+id/textView9"
+            android:id="@+id/rgAlc"
+            android:layout_above="@+id/etAlc">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsial"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoal"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView11"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_above="@+id/etTox"
+            android:id="@+id/rgTox">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsito"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoto"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Enfermedades  Infecciosas de la infancia"
+            android:id="@+id/textView12"
+            android:layout_below="@+id/etTab"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etEnfin"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/textView12"
+            android:layout_alignEnd="@+id/textView12"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etTu"
+            android:layout_alignTop="@+id/etEnfin"
+            android:hint="Descripción"
+            android:layout_alignRight="@+id/textView72"
+            android:layout_alignEnd="@+id/textView72"
+            android:layout_alignLeft="@+id/textView72"
+            android:layout_alignStart="@+id/textView72" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etEnfve"
+            android:layout_alignBottom="@+id/etTu"
+            android:layout_alignLeft="@+id/etTox"
+            android:layout_alignStart="@+id/etTox"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView12"
+            android:layout_above="@+id/etEnfin"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6"
+            android:id="@+id/rgEnin">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsienin"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoenin"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuberculosis"
+            android:id="@+id/textView69"
+            android:layout_above="@+id/rgEnin"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_alignRight="@+id/btnpag2perpat"
+            android:layout_alignEnd="@+id/btnpag2perpat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Enfermedades Venéreas"
+            android:id="@+id/textView70"
+            android:layout_alignTop="@+id/textView69"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/etTox"
+            android:layout_alignStart="@+id/etTox" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView69"
+            android:layout_alignLeft="@+id/textView69"
+            android:layout_alignStart="@+id/textView69"
+            android:layout_alignRight="@+id/textView69"
+            android:layout_alignEnd="@+id/textView69"
+            android:layout_above="@+id/etTu"
+            android:id="@+id/rgTub">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsitu"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnotu"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView69"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/etEnfve"
+            android:layout_alignStart="@+id/etEnfve"
+            android:layout_above="@+id/etEnfve"
+            android:id="@+id/rgEnfve">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsienve"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoenve"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiebre Tifoidea"
+            android:id="@+id/textView71"
+            android:layout_below="@+id/etEnfin"
+            android:layout_alignRight="@+id/etEnfin"
+            android:layout_alignEnd="@+id/etEnfin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salmonelosis"
+            android:id="@+id/textView72"
+            android:layout_below="@+id/etTu"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neumonías"
+            android:id="@+id/textView73"
+            android:layout_below="@+id/etEnfve"
+            android:layout_alignLeft="@+id/etEnfve"
+            android:layout_alignStart="@+id/etEnfve" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etSal"
+            android:layout_below="@+id/textView72"
+            android:layout_alignLeft="@+id/textView72"
+            android:layout_alignStart="@+id/textView72"
+            android:layout_marginTop="59dp"
+            android:layout_alignRight="@+id/textView72"
+            android:layout_alignEnd="@+id/textView72"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etNeu"
+            android:layout_alignTop="@+id/etSal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/textView73"
+            android:layout_alignStart="@+id/textView73"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_above="@+id/etFieti"
+            android:layout_alignTop="@+id/rgSal"
+            android:id="@+id/rgFieti">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsifiti"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnofiti"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/etSal"
+            android:layout_alignStart="@+id/etSal"
+            android:layout_alignRight="@+id/etSal"
+            android:layout_alignEnd="@+id/etSal"
+            android:layout_below="@+id/textView72"
+            android:id="@+id/rgSal"
+            android:layout_above="@+id/etFieti">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsisa"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnosa"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/rgSal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/etNeu"
+            android:layout_alignStart="@+id/etNeu"
+            android:layout_above="@+id/etNeu"
+            android:id="@+id/rgNeu">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsine"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnone"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFieti"
+            android:layout_alignBottom="@+id/etSal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6"
+            android:hint="Descripción" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pagina2"
+            android:id="@+id/btnpag2perpat"
+            android:layout_marginTop="31dp"
+            android:layout_below="@+id/etSal"
+            android:layout_alignLeft="@+id/rgAlc"
+            android:layout_alignStart="@+id/rgAlc"
+            android:layout_alignRight="@+id/etSal"
+            android:layout_alignEnd="@+id/etSal" />
+    </RelativeLayout>
+</LinearLayout>

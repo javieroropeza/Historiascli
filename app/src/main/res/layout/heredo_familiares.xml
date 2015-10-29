@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hefa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuberculosis"
+            android:id="@+id/textView10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetes Mellitus"
+            android:id="@+id/textView15"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:text="Hipertensión"
+            android:layout_marginRight="23dp"
+            android:layout_marginEnd="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:text="Neoplasias"
+            android:layout_above="@+id/etNeo"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_marginBottom="84dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiopatías"
+            android:id="@+id/textView18"
+            android:layout_alignTop="@+id/textView17"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hepatopatías"
+            android:id="@+id/textView19"
+            android:layout_alignTop="@+id/textView18"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nefropatías"
+            android:id="@+id/textView20"
+            android:layout_below="@+id/etNeo"
+            android:layout_alignRight="@+id/textView17"
+            android:layout_alignEnd="@+id/textView17" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Página 2"
+            android:id="@+id/bntpag2hefa"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView18"
+            android:layout_alignEnd="@+id/textView18"
+            android:layout_marginBottom="39dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etTu"
+            android:layout_above="@+id/textView18"
+            android:layout_toStartOf="@+id/textView15"
+            android:hint="Descripción"
+            android:layout_alignRight="@+id/textView10"
+            android:layout_alignEnd="@+id/textView10" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etDia"
+            android:layout_alignTop="@+id/etTu"
+            android:hint="Descripción"
+            android:layout_alignRight="@+id/rgDia"
+            android:layout_alignEnd="@+id/rgDia"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etHip"
+            android:layout_above="@+id/textView19"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textView17"
+            android:layout_alignEnd="@+id/textView17"
+            android:id="@+id/rgTub"
+            android:layout_alignBottom="@+id/rgDia">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsitub"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnotub"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView15"
+            android:layout_alignLeft="@+id/bntpag2hefa"
+            android:layout_alignStart="@+id/bntpag2hefa"
+            android:layout_above="@+id/etDia"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignEnd="@+id/textView15"
+            android:id="@+id/rgDia">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsidia"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnodia"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView16"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16"
+            android:layout_above="@+id/etHip"
+            android:id="@+id/rgHip">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsihip"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnohip"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etNeo"
+            android:hint="Descripción"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etTu"
+            android:layout_alignEnd="@+id/etTu" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etCar"
+            android:layout_alignBottom="@+id/etNeo"
+            android:layout_alignLeft="@+id/etDia"
+            android:layout_alignStart="@+id/etDia"
+            android:layout_alignRight="@+id/rgDia"
+            android:layout_alignEnd="@+id/rgDia"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etHep"
+            android:layout_alignTop="@+id/etCar"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rgCar"
+            android:layout_below="@+id/textView18"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_above="@+id/etCar"
+            android:layout_alignRight="@+id/textView18"
+            android:layout_alignEnd="@+id/textView18">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsicar"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnocar"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/rgCar"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_above="@+id/etHep"
+            android:id="@+id/rgHep">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsihep"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnohep"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etNef"
+            android:layout_above="@+id/bntpag2hefa"
+            android:layout_toStartOf="@+id/bntpag2hefa"
+            android:layout_alignRight="@+id/etNeo"
+            android:layout_alignEnd="@+id/etNeo"
+            android:hint="Descripción" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enfermedades endocrinas"
+            android:id="@+id/textView21"
+            android:layout_alignTop="@+id/textView20"
+            android:layout_alignLeft="@+id/etCar"
+            android:layout_alignStart="@+id/etCar"
+            android:layout_alignRight="@+id/etCar"
+            android:layout_alignEnd="@+id/etCar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enfermedades Mentales"
+            android:id="@+id/textView22"
+            android:layout_alignTop="@+id/textView21"
+            android:layout_alignLeft="@+id/etHep"
+            android:layout_alignStart="@+id/etHep" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView21"
+            android:layout_alignStart="@+id/textView21"
+            android:layout_above="@+id/etNef"
+            android:layout_alignRight="@+id/rgCar"
+            android:layout_alignEnd="@+id/rgCar"
+            android:id="@+id/egEnfen"
+            android:layout_below="@+id/textView21">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsienfen"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoenfen"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etEnfen"
+            android:layout_below="@+id/egEnfen"
+            android:layout_alignLeft="@+id/egEnfen"
+            android:layout_alignStart="@+id/egEnfen"
+            android:layout_alignRight="@+id/rgDia"
+            android:layout_alignEnd="@+id/rgDia"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/egEnfen"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22"
+            android:layout_above="@+id/etEnfen"
+            android:id="@+id/rgEnfme">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsienfme"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoenfme"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etEnfme"
+            android:layout_alignBottom="@+id/etEnfen"
+            android:layout_toEndOf="@+id/rgDia"
+            android:layout_alignLeft="@+id/rgEnfme"
+            android:layout_alignStart="@+id/rgEnfme"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/etNeo"
+            android:layout_alignEnd="@+id/etNeo"
+            android:layout_above="@+id/etNef"
+            android:layout_below="@+id/textView21"
+            android:id="@+id/rgNef">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsinef"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnonef"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/rgCar"
+            android:layout_toStartOf="@+id/etDia"
+            android:layout_above="@+id/etNeo"
+            android:layout_alignRight="@+id/textView17"
+            android:layout_alignEnd="@+id/textView17"
+            android:id="@+id/rgNeo">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsineo"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoneo"
+                android:checked="false" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>

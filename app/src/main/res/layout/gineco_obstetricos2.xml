@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gine2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Vida sexual"
+            android:id="@+id/textView62"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/svise"
+            android:layout_below="@+id/textView62"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/etNoge"
+            android:layout_alignRight="@+id/etPar"
+            android:layout_alignEnd="@+id/etPar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="No. de Gestas"
+            android:id="@+id/textView66"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="68dp"
+            android:layout_marginEnd="68dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etNoge"
+            android:layout_below="@+id/textView66"
+            android:layout_alignLeft="@+id/textView66"
+            android:layout_alignStart="@+id/textView66"
+            android:layout_alignRight="@+id/textView66"
+            android:layout_alignEnd="@+id/textView66" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Partos"
+            android:id="@+id/textView67"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/svise"
+            android:layout_alignRight="@+id/textView62"
+            android:layout_alignEnd="@+id/textView62" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rgPar"
+            android:layout_below="@+id/textView67"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etAbo"
+            android:layout_alignRight="@+id/textView67"
+            android:layout_alignEnd="@+id/textView67">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsipar"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnopar"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPar"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/textView67"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btngugiob"
+            android:layout_toLeftOf="@+id/btngugiob"
+            android:hint="Descripción" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Abortos"
+            android:id="@+id/textView68"
+            android:layout_above="@+id/rgPar"
+            android:layout_alignRight="@+id/etNoge"
+            android:layout_alignEnd="@+id/etNoge" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etAbo"
+            android:layout_alignBottom="@+id/etPar"
+            android:layout_alignLeft="@+id/textView68"
+            android:layout_alignStart="@+id/textView68"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView68"
+            android:layout_alignLeft="@+id/textView68"
+            android:layout_alignStart="@+id/textView68"
+            android:layout_above="@+id/etAbo">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsiabo"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoabo"
+                android:checked="false" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:id="@+id/btngugiob"
+            android:layout_marginTop="89dp"
+            android:layout_below="@+id/etPar"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>

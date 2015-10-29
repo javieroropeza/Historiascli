@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/per2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paludismo"
+            android:id="@+id/textView37"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Parasitosis "
+            android:id="@+id/textView38"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/textView39" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Padecimientos Articulares"
+            android:id="@+id/textView39"
+            android:layout_gravity="right"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView38"
+            android:layout_toEndOf="@+id/textView38" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPad"
+            android:layout_below="@+id/textView39"
+            android:layout_alignLeft="@+id/textView39"
+            android:layout_alignStart="@+id/textView39"
+            android:layout_marginTop="57dp"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPar"
+            android:layout_alignTop="@+id/etPad"
+            android:layout_alignLeft="@+id/textView38"
+            android:layout_alignStart="@+id/textView38"
+            android:hint="Descripción"
+            android:layout_toStartOf="@+id/textView39"
+            android:layout_alignRight="@+id/rgPar"
+            android:layout_alignEnd="@+id/rgPar" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPal"
+            android:layout_alignTop="@+id/etPar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textView37"
+            android:layout_alignEnd="@+id/textView37"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/textView38"
+            android:layout_above="@+id/etPar"
+            android:id="@+id/rgPa"
+            android:layout_alignRight="@+id/etPal"
+            android:layout_alignEnd="@+id/etPal"
+            android:layout_alignTop="@+id/rgPar">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsipal"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnopal"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/etPar"
+            android:layout_alignLeft="@+id/textView38"
+            android:layout_alignStart="@+id/textView38"
+            android:id="@+id/rgPar"
+            android:layout_toLeftOf="@+id/textView39"
+            android:layout_toStartOf="@+id/textView39"
+            android:layout_below="@+id/textView38">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsipar"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnopar"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView39"
+            android:layout_alignStart="@+id/textView39"
+            android:layout_below="@+id/textView39"
+            android:id="@+id/rgPad"
+            android:layout_above="@+id/etPar">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsipad"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnopad"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Intervenciones Quirúrgicas"
+            android:id="@+id/textView40"
+            android:layout_below="@+id/etPar"
+            android:layout_toLeftOf="@+id/etPar"
+            android:layout_toStartOf="@+id/etPar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fracturas y/o Esguinces"
+            android:id="@+id/textView41"
+            android:layout_below="@+id/etPar"
+            android:layout_toRightOf="@+id/textView40"
+            android:layout_toLeftOf="@+id/etPad"
+            android:layout_toStartOf="@+id/etPad" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Perdida del conocimiento"
+            android:id="@+id/textView42"
+            android:layout_below="@+id/etPad"
+            android:layout_toRightOf="@+id/textView41"
+            android:layout_toEndOf="@+id/textView41" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etIntqui"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etPal"
+            android:layout_alignEnd="@+id/etPal"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFra"
+            android:layout_alignTop="@+id/etIntqui"
+            android:layout_toRightOf="@+id/textView40"
+            android:layout_alignRight="@+id/etPar"
+            android:layout_alignEnd="@+id/etPar"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etPer"
+            android:layout_alignTop="@+id/etFra"
+            android:layout_toRightOf="@+id/textView41"
+            android:layout_toEndOf="@+id/textView41"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView40"
+            android:layout_alignRight="@+id/textView37"
+            android:layout_alignEnd="@+id/textView37"
+            android:layout_above="@+id/etIntqui"
+            android:id="@+id/rgInt">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsiintqui"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnointqui"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/rgInt"
+            android:layout_alignLeft="@+id/etFra"
+            android:layout_alignStart="@+id/etFra"
+            android:layout_alignRight="@+id/etFra"
+            android:layout_alignEnd="@+id/etFra"
+            android:layout_above="@+id/etFra"
+            android:id="@+id/rgFra">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsifra"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnofra"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/rgFra"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/etPer"
+            android:layout_alignStart="@+id/etPer"
+            android:layout_above="@+id/etPer"
+            android:id="@+id/rgPer">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsiper"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoper"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Intolerancia a medicamentos"
+            android:id="@+id/textView43"
+            android:layout_below="@+id/etIntqui"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etIntqui"
+            android:layout_alignEnd="@+id/etIntqui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Desarrollo somático"
+            android:id="@+id/textView44"
+            android:layout_below="@+id/etFra"
+            android:layout_alignLeft="@+id/etFra"
+            android:layout_alignStart="@+id/etFra"
+            android:layout_alignRight="@+id/etFra"
+            android:layout_alignEnd="@+id/etFra" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Alergias"
+            android:id="@+id/textView45"
+            android:layout_alignTop="@+id/textView44"
+            android:layout_alignLeft="@+id/etPer"
+            android:layout_alignStart="@+id/etPer"
+            android:layout_alignBottom="@+id/textView44" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etIntme"
+            android:layout_below="@+id/textView43"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="57dp"
+            android:layout_alignRight="@+id/textView43"
+            android:layout_alignEnd="@+id/textView43"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etDes"
+            android:layout_alignBottom="@+id/etIntme"
+            android:layout_alignLeft="@+id/textView44"
+            android:layout_alignStart="@+id/textView44"
+            android:layout_alignRight="@+id/textView44"
+            android:layout_alignEnd="@+id/textView44"
+            android:hint="Descripción" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etAle"
+            android:layout_alignTop="@+id/etDes"
+            android:layout_toEndOf="@+id/etIntme"
+            android:layout_alignLeft="@+id/textView45"
+            android:layout_alignStart="@+id/textView45"
+            android:hint="Descripción" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView43"
+            android:layout_alignRight="@+id/textView37"
+            android:layout_alignEnd="@+id/textView37"
+            android:layout_above="@+id/etDes"
+            android:id="@+id/rgIntme">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsiinme"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoinme"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView44"
+            android:layout_alignRight="@+id/etDes"
+            android:layout_alignEnd="@+id/etDes"
+            android:id="@+id/rgDes"
+            android:layout_alignLeft="@+id/etDes"
+            android:layout_alignStart="@+id/etDes"
+            android:layout_above="@+id/etDes">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsides"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnodes"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView45"
+            android:layout_alignLeft="@+id/textView45"
+            android:layout_alignStart="@+id/textView45"
+            android:layout_above="@+id/etAle"
+            android:id="@+id/rgAle">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsiale"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnoale"
+                android:checked="false" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:id="@+id/btnguperpat"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/etDes"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>

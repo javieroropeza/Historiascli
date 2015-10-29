@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Menarca"
+            android:id="@+id/textView53"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desarrollo Sexual"
+            android:id="@+id/textView54"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Ritmo Menstrual"
+            android:id="@+id/textView55"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etMen"
+            android:layout_marginTop="56dp"
+            android:layout_below="@+id/textView53"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Descripción"
+            android:layout_toStartOf="@+id/textView54"
+            android:layout_toLeftOf="@+id/textView54" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etDes"
+            android:layout_alignTop="@+id/etMen"
+            android:layout_alignRight="@+id/textView54"
+            android:layout_alignEnd="@+id/textView54"
+            android:hint="Notas"
+            android:layout_alignLeft="@+id/textView57"
+            android:layout_alignStart="@+id/textView57" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etRit"
+            android:layout_alignTop="@+id/etDes"
+            android:layout_alignRight="@+id/textView55"
+            android:layout_alignEnd="@+id/textView55"
+            android:layout_alignLeft="@+id/textView55"
+            android:layout_alignStart="@+id/textView55"
+            android:hint="Notas" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView53"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/etDes"
+            android:layout_alignRight="@+id/textView53"
+            android:layout_alignEnd="@+id/textView53"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:id="@+id/rbsimen"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/rbnomen"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Cantidad"
+            android:id="@+id/textView56"
+            android:layout_below="@+id/etMen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duración"
+            android:id="@+id/textView57"
+            android:layout_below="@+id/etDes"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fecha de última menstruación"
+            android:id="@+id/textView58"
+            android:layout_below="@+id/etRit"
+            android:layout_alignRight="@+id/etRit"
+            android:layout_alignEnd="@+id/etRit"
+            android:layout_alignLeft="@+id/etRit"
+            android:layout_alignStart="@+id/etRit" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etCan"
+            android:layout_below="@+id/textView58"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Cantidad"
+            android:layout_toStartOf="@+id/etDur"
+            android:layout_alignRight="@+id/etMen"
+            android:layout_alignEnd="@+id/etMen" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etDur"
+            android:layout_alignTop="@+id/etCan"
+            android:layout_alignLeft="@+id/etDes"
+            android:layout_alignStart="@+id/etDes"
+            android:hint="Duración"
+            android:layout_alignRight="@+id/textView54"
+            android:layout_alignEnd="@+id/textView54" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFeulme"
+            android:layout_alignBottom="@+id/etDur"
+            android:layout_alignRight="@+id/textView58"
+            android:layout_alignEnd="@+id/textView58"
+            android:layout_alignLeft="@+id/textView58"
+            android:layout_alignStart="@+id/textView58" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha probable de parto"
+            android:id="@+id/textView59"
+            android:layout_below="@+id/etCan"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/etDur"
+            android:layout_alignRight="@+id/etCan"
+            android:layout_alignEnd="@+id/etCan" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFepropa"
+            android:layout_below="@+id/textView59"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textView59"
+            android:layout_alignEnd="@+id/textView59" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de último parto"
+            android:id="@+id/textView60"
+            android:layout_below="@+id/etDur"
+            android:layout_alignLeft="@+id/etDur"
+            android:layout_alignStart="@+id/etDur"
+            android:layout_alignRight="@+id/etDur"
+            android:layout_alignEnd="@+id/etDur" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFeulpa"
+            android:layout_alignBottom="@+id/etFepropa"
+            android:layout_alignLeft="@+id/textView60"
+            android:layout_alignStart="@+id/textView60"
+            android:layout_alignRight="@+id/textView60"
+            android:layout_alignEnd="@+id/textView60" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de primera relación"
+            android:id="@+id/textView61"
+            android:layout_below="@+id/etFeulme"
+            android:layout_alignLeft="@+id/etFeulme"
+            android:layout_alignStart="@+id/etFeulme" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFeprire"
+            android:layout_alignTop="@+id/etFeulpa"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/textView61"
+            android:layout_alignStart="@+id/textView61" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fecha de matrimonio"
+            android:id="@+id/textView63"
+            android:layout_below="@+id/etFepropa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etFepropa"
+            android:layout_alignEnd="@+id/etFepropa" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFema"
+            android:layout_below="@+id/textView63"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textView63"
+            android:layout_alignEnd="@+id/textView63" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fecha de menopausia"
+            android:id="@+id/textView64"
+            android:layout_below="@+id/etFeulpa"
+            android:layout_alignLeft="@+id/etFeulpa"
+            android:layout_alignStart="@+id/etFeulpa"
+            android:layout_alignRight="@+id/etFeulpa"
+            android:layout_alignEnd="@+id/etFeulpa" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFeme"
+            android:layout_alignBottom="@+id/etFema"
+            android:layout_alignLeft="@+id/textView64"
+            android:layout_alignStart="@+id/textView64"
+            android:layout_alignRight="@+id/textView64"
+            android:layout_alignEnd="@+id/textView64" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fecha de Climaterio"
+            android:id="@+id/textView65"
+            android:layout_below="@+id/etFeprire"
+            android:layout_alignLeft="@+id/etFeprire"
+            android:layout_alignStart="@+id/etFeprire" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFecli"
+            android:layout_alignTop="@+id/etFeme"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/textView65"
+            android:layout_alignStart="@+id/textView65" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Página 2"
+            android:id="@+id/btnpag2gin"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/etFeme"
+            android:layout_alignLeft="@+id/etFeme"
+            android:layout_alignStart="@+id/etFeme" />
+    </RelativeLayout>
+</LinearLayout>
